@@ -1,5 +1,7 @@
 package nl.novi.opdrachten.lijsten;
 
+import nl.novi.uitleg.week2.io.Bestandslezer;
+
 public class VersleutelNamenLijst {
 
     /**
@@ -16,4 +18,10 @@ public class VersleutelNamenLijst {
     public static void main(String[] args) {
 
     }
+
+    public static void leesVerzetsLeden() {
+        Bestandslezer bestandslezer = new Bestandslezer();
+    }
+
+
 }

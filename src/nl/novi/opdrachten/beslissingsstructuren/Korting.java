@@ -6,7 +6,7 @@ public class Korting {
     public static void main(String[] args) {
         Scanner userInputScanner = new Scanner(System.in);
 
-        System.out.println("Wat is het aankoopbedrag?");
+        System.out.print("Wat is het aankoopbedrag?: ");
         double aankoopBedrag = userInputScanner.nextDouble();
 
         /*
@@ -24,5 +24,12 @@ public class Korting {
         "De klant krijgt 16% korting. Het aankoopbedrag is nu: -HIER HET BEDRAG MET KORTING-"
          */
 
+        if (aankoopBedrag >= 300.01) {
+            System.out.println("De klant krijgt 16% korting. Het aankoopbedrag is nu: €" + (aankoopBedrag - (aankoopBedrag * 0.16)));
+        } else if ((aankoopBedrag >= 75) && (aankoopBedrag <= 300)) {
+            System.out.println("De klant krijgt 10% korting. Het aankoopbedrag is nu: €" + (aankoopBedrag - (aankoopBedrag * 0.1)));
+        } else {
+            System.out.println("De klant krijgt geen korting. Het aankoopbedrag blijft €" + aankoopBedrag);
+        }
     }
 }

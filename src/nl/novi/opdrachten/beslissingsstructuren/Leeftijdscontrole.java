@@ -6,7 +6,7 @@ public class Leeftijdscontrole {
     public static void main(String[] args) {
         Scanner userInputScanner = new Scanner(System.in);
 
-        System.out.println("Wat is uw leeftijd?");
+        System.out.print("Wat is uw leeftijd?: ");
         int givenAge = userInputScanner.nextInt();
 
         /*
@@ -18,5 +18,12 @@ public class Leeftijdscontrole {
 
         Maak de beslissingsstructuur (if/else if/else) hieronder.
          */
+        if (givenAge >= 25) {
+            System.out.println("Jij mag zonder restricties alcohol kopen.");
+        } else if (givenAge < 18) {
+            System.out.println("Jij mag geen alcohol kopen.");
+        } else {
+            System.out.println("Jij mag alcohol kopen, maar jij moet je ID tonen.");
+        }
     }
 }

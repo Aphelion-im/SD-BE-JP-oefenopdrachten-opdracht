@@ -6,7 +6,7 @@ public class Geslacht {
     public static void main(String[] args) {
         Scanner userInputScanner = new Scanner(System.in);
 
-        System.out.println("Wat is uw geslacht?");
+        System.out.print("Wat is uw geslacht?: ");
         String geslacht = userInputScanner.nextLine();
 
         /*
@@ -18,7 +18,14 @@ public class Geslacht {
 
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
-
+        if (geslacht.equalsIgnoreCase("man")) {
+            System.out.println("Dag meneer");
+        } else if (geslacht.equalsIgnoreCase("vrouw")) {
+            System.out.println("Dag mevrouw");
+        } else {
+            System.out.println("Dag persoon");
+        }
     }
-
 }
+
+
